@@ -12,6 +12,18 @@
         padding: 0;
         box-sizing:border-box;
       }
+      .btn-primary {
+        background-color: #1996b8;
+        border: none;
+        transition: transform 0.3s ease;
+      }
+      .btn-primary:hover {
+        background-color: #28aace;
+        transform: scale(1.05);
+      }
+      .btn-primary:active{
+        background-color: #195869 !important;
+      }
       body {
         font-family: "Comfortaa", sans-serif;
         background-color: #000000;
@@ -96,7 +108,7 @@
         align-items: center;
         padding: 4rem;
         color: #153343;
-        background-color: #a4d7f3/*#c8f1fc*/;
+        background-color: #bcf1f8/*#c8f1fc*/;
       }
       .stats .container{
         display:block;
@@ -173,20 +185,12 @@
         line-height: 2rem;
       }
       footer {
-        background-color: #ffffff;
+        background-color: #bcf1f8;
         color: #333333;
-        padding: 1rem;
+        max-height: 72px;
+        padding: 1.5rem;
         text-align: center;
         box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-      }
-      .btn-primary {
-        background-color: #378ab7;
-        border: none;
-        transition: transform 0.3s ease;
-      }
-      .btn-primary:hover {
-        background-color: #195869;
-        transform: scale(1.05);
       }
     </style>
   </head>
@@ -253,49 +257,49 @@
       </section>
       <section class="about">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="image-container">
-        <img src="img1.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Наша миссия и ценности</h5>
-        <p>ТОО "НефтеГазСтрой-ПВ" стремится к созданию надежной и безопасной инфраструктуры для нефтегазовой отрасли. Мы гарантируем высокое качество, экологичность и инновации, способствуя устойчивому развитию Казахстана.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="image-container">
-        <img src="img2.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Экспертиза и технологии</h5>
-        <p>Наши специалисты обладают глубокими знаниями и опытом в строительстве объектов нефтегазового сектора. Используя передовые технологии и оборудование, мы обеспечиваем эффективность и надежность каждого проекта.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="image-container">
-        <img src="img3.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Надежное партнерство</h5>
-        <p>Мы строим доверительные отношения с клиентами и партнерами, предлагая прозрачные решения и гибкий подход. Наша цель – поддерживать экономический рост региона через реализацию масштабных и значимых проектов.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="image-container">
+                <img src="img1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Наша миссия и ценности</h5>
+                <p>ТОО "НефтеГазСтрой-ПВ" стремится к созданию надежной и безопасной инфраструктуры для нефтегазовой отрасли. Мы гарантируем высокое качество, экологичность и инновации, способствуя устойчивому развитию Казахстана.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="image-container">
+                <img src="img2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Экспертиза и технологии</h5>
+                <p>Наши специалисты обладают глубокими знаниями и опытом в строительстве объектов нефтегазового сектора. Используя передовые технологии и оборудование, мы обеспечиваем эффективность и надежность каждого проекта.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="image-container">
+                <img src="img3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Надежное партнерство</h5>
+                <p>Мы строим доверительные отношения с клиентами и партнерами, предлагая прозрачные решения и гибкий подход. Наша цель – поддерживать экономический рост региона через реализацию масштабных и значимых проектов.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </section>
     <main>
     <footer>
