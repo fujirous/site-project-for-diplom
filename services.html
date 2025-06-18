@@ -33,11 +33,14 @@
                 position: fixed;
                 top: 0;
                 width: 100vw;
-                height: 100px;
-                font-weight: bolder;
+                height: 80px;
+                font-weight: 600;
                 background-color: #00000035;
                 padding: 0 3rem;
                 backdrop-filter: blur(10px);
+            }
+            .navbar {
+                padding: 0;
             }
             .navbar-brand,
             .nav-link {
@@ -130,9 +133,16 @@
                 font-weight: 500;
                 font-size: 20pt;
             }
-            .service-card a {
+            .service-card button {
                 width: 10rem;
                 margin: 0 auto;
+            }
+            .modal-content {
+                background: linear-gradient(-45deg, #60aec3d9, #cef3f9cc);
+                backdrop-filter: blur(10px);
+            }
+            .modal-body ul {
+                list-style-type: upper-roman;
             }
             @media (max-width: ) {
                 
@@ -162,21 +172,93 @@
                                     <div class="service-card">
                                         <h3>Строительство трубопроводов</h3>
                                         <p>Проектирование и строительство нефте- и газопроводов любой сложности.</p>
-                                        <a href="#" class="btn btn-primary">Подробнее</a>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pipelineModal">Подробнее</button>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="service-card">
                                         <h3>Инфраструктурные объекты</h3>
                                         <p>Возведение объектов переработки и хранения нефти и газа.</p>
-                                        <a href="#" class="btn btn-primary">Подробнее</a>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infrastructureModal">Подробнее</button>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="service-card">
                                         <h3>Техническое обслуживание</h3>
                                         <p>Ремонт и модернизация существующих объектов.</p>
-                                        <a href="#" class="btn btn-primary">Подробнее</a>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#maintenanceModal">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="pipelineModal" tabindex="-1" aria-labelledby="pipelineModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="pipelineModalLabel">Строительство трубопроводов</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ТОО "НефтеГазСтрой-ПВ" специализируется на проектировании и строительстве нефте- и газопроводов любой сложности. Мы предлагаем полный цикл работ, начиная от разработки проектной документации и заканчивая сдачей объекта в эксплуатацию. Наши услуги включают:</p>
+                                            <ul>
+                                                <li>Разработку технических проектов для магистральных и распределительных трубопроводов.</li>
+                                                <li>Строительство трубопроводов с использованием современных материалов и технологий, обеспечивающих долговечность и безопасность.</li>
+                                                <li>Проведение земляных работ, включая подготовку трассы и восстановление территории после строительства.</li>
+                                                <li>Монтаж и сварку труб, а также установку запорной арматуры и оборудования.</li>
+                                                <li>Контроль качества на всех этапах строительства, включая гидравлические испытания и диагностику.</li>
+                                            </ul>
+                                            <p>Мы работаем с проектами любой протяженности и сложности, гарантируя соблюдение всех норм и стандартов безопасности.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="infrastructureModal" tabindex="-1" aria-labelledby="infrastructureModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="infrastructureModalLabel">Инфраструктурные объекты</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ТОО "НефтеГазСтрой-ПВ" занимается возведением инфраструктурных объектов для переработки и хранения нефти и газа. Мы обеспечиваем создание надежных и функциональных сооружений, соответствующих современным требованиям. Наши услуги включают:</p>
+                                            <ul>
+                                                <li>Строительство нефтеперерабатывающих и газоперерабатывающих заводов.</li>
+                                                <li>Возведение резервуарных парков для хранения нефтепродуктов и газа.</li>
+                                                <li>Создание насосных и компрессорных станций для транспортировки сырья.</li>
+                                                <li>Монтаж систем автоматизации и управления технологическими процессами.</li>
+                                                <li>Обеспечение объектов необходимыми коммуникациями, включая системы водоснабжения, канализации и электроснабжения.</li>
+                                            </ul>
+                                            <p>Каждый проект реализуется с учетом экологических норм и требований заказчика, обеспечивая высокую эффективность и безопасность эксплуатации.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="maintenanceModal" tabindex="-1" aria-labelledby="maintenanceModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="maintenanceModalLabel">Техническое обслуживание</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ТОО "НефтеГазСтрой-ПВ" предоставляет услуги по ремонту и модернизации объектов нефтегазовой отрасли. Мы обеспечиваем бесперебойную работу оборудования и инфраструктуры, продлевая срок их службы. Наши услуги включают:</p>
+                                            <ul>
+                                                <li>Диагностику и ремонт трубопроводов, включая замену поврежденных участков.</li>
+                                                <li>Техническое обслуживание насосных и компрессорных станций.</li>
+                                                <li>Модернизацию систем управления и автоматизации для повышения эффективности.</li>
+                                                <li>Проведение профилактических осмотров и тестирования оборудования.</li>
+                                                <li>Ремонт и обновление резервуаров для хранения нефти и газа.</li>
+                                            </ul>
+                                            <p>Мы используем современные технологии диагностики и ремонта, чтобы минимизировать простои и обеспечить безопасность эксплуатации объектов.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
